@@ -7,6 +7,7 @@ function findMinAndRemove(array){
       min = array[i]
     }
   }
+  array.splice(minIdx, 1)
   return min
 }
 
