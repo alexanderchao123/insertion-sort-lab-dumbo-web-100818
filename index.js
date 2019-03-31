@@ -1,9 +1,10 @@
 function findMinAndRemove(array){
-  let min = array[0]
+  let minIdx = 0
+  let min = array[minIdx]
   for(let i = 1; i < array.length; i++) {
     if (array[i] < min) {
+      minIdx = i
       min = array[i]
-      array.slice()
     }
   }
   return min
